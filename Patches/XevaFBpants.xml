@@ -1,0 +1,167 @@
+<Patch>
+    <Operation Class="PatchOperationFindMod">
+        <mods>
+          <li>Xeva.XevaFBpants.11</li>
+          <li>Xeva FB Pants</li>
+        </mods>
+       <match Class="PatchOperationReplace">
+        <xpath>/Defs/ThingDef[
+            defName="Apparel_PantsES" or 
+            defName="Apparel_PantsSB" or 
+            defName="Apparel_PantsSR" or 
+            defName="Apparel_PantsMU" or 
+            defName="Apparel_PantsSCR" or 
+            defName="Apparel_PantsT"
+            ]/apparel/layers</xpath>
+          <value>
+              <layers>
+                  <li>XPants</li>
+                  <li>OnSkin</li>
+              </layers>
+          </value>
+       </match>
+     </Operation>
+
+    <Operation Class="PatchOperationFindMod">
+      <mods><li>Biotech</li></mods>
+      <match Class="PatchOperationReplace">
+		<xpath>/Defs/ThingDef[defName="Apparel_KidPants"]/apparel/layers</xpath>
+		<value>
+			<layers>
+				<li>XPants</li>
+                <li>OnSkin</li>
+			</layers>
+		</value>
+      </match>
+    </Operation>
+
+    <Operation Class="PatchOperationFindMod">
+       <mods>
+         <li>[RH2] Faction: Task Force 141</li>
+       </mods>
+      <match Class="PatchOperationSequence">
+        <success>Always</success>
+        <operations>
+            <li Class="PatchOperationReplace">
+                <xpath>/Defs/ThingDef[
+                defName="RNApparel_Pants_CryeG3MultiCam" or 
+                defName="RNApparel_Pants_BDUDCU"
+                ]/apparel/layers</xpath>
+                <value>
+                    <layers>
+                        <li>XPants</li>
+                        <li>OnSkin</li>
+                    </layers>
+                </value>
+            </li>
+        </operations>
+      </match>
+    </Operation>
+
+    <Operation Class="PatchOperationFindMod">
+       <mods>
+         <li>[RH2] Rimmu-Nation² - Clothing</li>
+       </mods>
+      <match Class="PatchOperationSequence">
+        <success>Always</success>
+        <operations>
+            <li Class="PatchOperationReplace">
+                <xpath>/Defs/ThingDef[
+                defName="RNApparel_Pants_511Stryke" or 
+                defName="RNApparel_Pants_BearGryllsSurvivor" or 
+                defName="RNApparel_Pants_BlackhawkPursuit" or 
+                defName="RNApparel_Pants_FjallravenKeb" or 
+                defName="RNApparel_Pants_HelikonPilgrim" or
+                defName="RNApparel_Pants_511StrykeMulticam" or 
+                defName="RNApparel_Pants_ACUUCP" or 
+                defName="RNApparel_Pants_BDUDMARPAT" or 
+                defName="RNApparel_Pants_CombatsDDPM" or 
+                defName="RNApparel_Pants_GORKA3Pants" or
+                defName="RNApparel_Pants_SuitBrioni" or 
+                defName="RNApparel_Jeans_Generic"
+                ]/apparel/layers</xpath>
+                <value>
+                    <layers>
+                        <li>XPants</li>
+                        <li>OnSkin</li>
+                    </layers>
+                </value>
+            </li>
+        </operations>
+      </match>
+    </Operation>
+
+    <Operation Class="PatchOperationFindMod">
+      <mods>
+          <li>Vanilla Apparel Expanded</li>
+          <li>Vanilla Armour Expanded</li>
+	  </mods>
+      <match Class="PatchOperationSequence">
+        <success>Always</success>
+        <operations>
+            <li Class="PatchOperationReplace">
+                <xpath>/Defs/ThingDef[
+                defName="VAE_Apparel_Shorts" or 
+                defName="VAE_Apparel_Skirt" or 
+                defName="VAE_Apparel_Trousers" or 
+                defName="VAE_Apparel_Jeans"
+                ]/apparel/layers</xpath>
+                <value>
+                    <layers>
+                        <li>XPants</li>
+                        <li>OnSkin</li>
+                    </layers>
+                </value>
+            </li>
+        </operations>
+       </match>
+    </Operation>
+
+    <Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>[Vee]Apparel Retextuer</li>
+            <li>Apparello 2</li>
+        </mods>
+        <nomatch Class="PatchOperationSequence">
+          <success>Always</success>
+          <operations>
+            <li Class="PatchOperationReplace">
+                <xpath>/Defs/ThingDef[defName="Apparel_Pants"]/apparel/layers</xpath>
+                <value>
+                    <layers>
+                        <li>XPants</li>
+                        <li>OnSkin</li>
+                    </layers>
+                </value>
+            </li>
+            <li Class="PatchOperationReplace">
+                <xpath>/Defs/ThingDef[defName="Apparel_FlakPants"]/apparel/layers</xpath>
+                <value>
+                    <layers>
+                        <li>XPants</li>
+                        <li>OnSkin</li>
+                    </layers>
+                </value>
+            </li>
+          </operations>
+        </nomatch>
+    </Operation>
+<!-- use with other mod, If other mods have added pants, you need to create a patch like below, otherwise the mod's pants will not be shown.
+
+e.g.
+
+    <Operation Class="PatchOperationFindMod">
+       <mods>
+         <li>OtherPants</li>
+       </mods>
+      <match Class="PatchOperationAdd">
+		<xpath>/Defs/ThingDef[defName="Apparel_KKPantsA" or defName="Apparel_KKPantsB" or defName="Apparel_KKPantsC" or defName="Apparel_KKPantsD"]/apparel</xpath>
+		<value>
+           <wornGraphicPath>Things/Pawn/Humanlike/Apparel/FlakPants/FlakPants</wornGraphicPath>
+		</value>
+      </match>
+    </Operation>
+	
+ -->
+	
+</Patch>
