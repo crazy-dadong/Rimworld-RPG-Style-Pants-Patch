@@ -10,7 +10,14 @@
 	<modDependencies>
 		<li>
 			<packageId>Sandy.RPGStyleInventory.avilmask.Revamped</packageId>
-			<displayName>RPG Style Pants Patch</displayName>
+			<displayName>RPG Style Inventory Revamped</displayName>
+			<downloadUrl>https://github.com/catgirlfighter/-1.0-RPG-Style-Inventory-V3.0-</downloadUrl>
+			<steamWorkshopUrl>https://steamcommunity.com/sharedfiles/filedetails/?id=2478833213</steamWorkshopUrl>
+		</li>
+		<li>
+			<packageId>Xeva.XevaFBpants.11</packageId>
+			<displayName>Xeva FB Pants</displayName>
+			<steamWorkshopUrl>https://steamcommunity.com/sharedfiles/filedetails/?id=2223652537</steamWorkshopUrl>
 		</li>
 	</modDependencies>
 	<description>
