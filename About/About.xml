@@ -6,14 +6,20 @@
 	<supportedVersions>
 		<li>1.5</li>
 	</supportedVersions>
-	<packageId>crazy-dadong.RPGStyleInventory.PantsPatch</packageId>
+	<packageId>CrazyDadong.RPGStyleInventory.PantsPatch</packageId>
+	<modDependencies>
+		<li>
+			<packageId>Sandy.RPGStyleInventory.avilmask.Revamped</packageId>
+			<displayName>RPG Style Pants Patch</displayName>
+		</li>
+	</modDependencies>
 	<description>
 	<![CDATA[
-	<h4>🎮 功能概述: RPG Style 的 Xeva 的裤子适配补丁</h4>
+	🎮 功能概述: RPG Style 的 Xeva 的裤子适配补丁
 
 	✅ 为所有 Xeva Fb Pants 添加贴身层， 使 RPGStyleInventory 可以正常渲染
 
-	📥 <b>使用须知：</b>
+	📥 使用须知：
 	1. 必须前置加载：
 	▸ RPG Style Inventory Revamped
 	▸ Xeva FB Pack
